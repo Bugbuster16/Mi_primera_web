@@ -1,0 +1,690 @@
+/*-------------------->BODY<--------------------*/
+
+body {
+    background-color: rgb(31, 31, 31);
+    font-family: 'Roboto', sans-serif;
+    /*cambia la fuente*/
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container p {
+    margin: 0;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.container ul li {
+
+    text-decoration: none;
+}
+
+.container ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*-------------------->BODY<--------------------*/
+
+/*-------------------->HEADER<--------------------*/
+
+header {
+    background-image: url('img/salvo-vintage.jpg');
+    /* Ruta de la imagen de fondo */
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center;
+    /* Centra la imagen de fondo */
+    height: 300px;
+    /* Altura del encabezado (ajusta según sea necesario) */
+}
+
+header.masthead {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #fff;
+    background-image: url("img/prog8.webp");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    /* Hace que la imagen cubra completamente el contenedor, recortando si es necesario /
+    display: block; / Asegura que la imagen sea tratada como un bloque y no tenga espacios adicionales /
+    margin: 0 auto; / Centra la imagen horizontalmente */
+}
+
+header.masthead .masthead-subheading {
+    font-size: 3rem;
+    font-style: italic;
+    line-height: 3rem;
+    margin-bottom: 40px;
+    padding-top: 120px;
+}
+
+header.masthead .masthead-heading {
+    font-size: .25rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+    margin-bottom: 2rem;
+}
+
+
+/*-------------------->HEADER<--------------------*/
+
+/*-------------------->NAV<--------------------*/
+.section-0{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 20px;
+    background-color: rgba(34, 34, 34, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.abrir_menu,
+.cerrar_menu{
+    display: none;
+}
+
+@media(max-width: 767px){
+    .section-0{
+        background-color: rgba(236, 45, 45, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+   
+    #lista-horizontal{
+        background-color: rgba(236, 45, 45, 0.5);
+        width: 767px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    #lista-horizontal li{
+        display: flex;
+        padding: 20px 0 20px 200px;
+    }
+
+
+    .abrir_menu,
+    .cerrar_menu{
+        display: block;
+        border: 0;
+        font-size: 3rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir_menu{
+        color: white;
+    }
+
+    .cerrar_menu{
+        color: white;
+        align-self: flex-end;
+        padding-right: 26px;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 88px 0 0 0;
+    }
+
+    .nav_visible{
+        opacity: 1;
+        visibility: visible;
+
+
+    }
+
+    .nav li{
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav li a{
+        color: antiquewhite;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+@media(min-width: 1024px){
+    nav{
+        font-size: 24px;
+    }
+}
+
+
+
+
+#lista-horizontal {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    /* Quita los puntos de la lista */
+    padding: 0;
+}
+
+#lista-horizontal li {
+    margin-right: 25px;
+    /* Añade un margen derecho entre los elementos (ajustalo según sea necesario) */
+}
+
+.logo1 {
+    padding-right: 70px;
+}
+
+/*-------------------->NAV<--------------------*/
+
+/*-------------------->MAIN<--------------------*/
+/*-------------------->SECTIONS<--------------------*/
+
+
+
+
+/*---->SECTION 1*/
+#section-1 {
+    padding: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.profile-picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-picture h1{
+    display: flex;
+    justify-content: center;
+}
+
+.profile-picture p{
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-globo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: auto;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.description{
+    color: black;
+}
+
+
+/*---->SECTION 1*/
+
+/*---->SECTION 2*/
+#section-2 {
+    color: #fff;
+    background-image: url("img/banner6.avif");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    /* Hace que la imagen cubra completamente el contenedor, recortando si es necesario /
+    display: block; / Asegura que la imagen sea tratada como un bloque y no tenga espacios adicionales /
+    margin: 0 auto; / Centra la imagen horizontalmente */
+}
+
+.title-2{
+    font-size: 35px;
+    padding: 50px;
+    align-items: center;
+}
+
+.cards-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    align-items: center;
+
+}
+
+.card{
+    max-width: 300px;
+    height: auto;
+    margin: 20px;
+    text-align: center;    
+    background-color: rgb(41, 41, 41, 0.5);
+    border-radius: 7%;
+}
+
+.imagen2{
+    max-width: 250px;
+    height: auto;
+    padding: 20px;
+    border-radius: 30%;
+    margin: 0px;
+}
+
+@media(max-width: 767px){
+    .cards-wrapper{
+        width:45%;
+        flex-direction: column;
+    }
+}
+
+
+@media(min-width: 768px){
+    .cards-wrapper{
+        width: 95%;
+        justify-content: space-evenly;
+
+    }
+}
+/*---->SECTION 2*/
+
+/*---->SECTION 3*/
+#section-3 {
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title-3{
+    font-size: 35px;
+    padding: 110px 0 20px 0;
+    color: #fff;
+    
+    
+}
+
+.imagen2-globo{
+    width: 400px;
+    height: auto;
+    padding: 0px;
+    border-radius: 25%;
+    margin: 0px;
+
+}
+
+
+/*---->SECTION 3*/
+
+/*---->SECTION 4*/
+#section-4 {
+    color: #fff;
+    background-image: url("img/message2.webp");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  .form-header {
+    text-align: center;
+    
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+
+
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(41, 41, 41, 0.5);
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+
+  }
+
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin: 10px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    max-width: 400px;
+  }
+  
+  .form-row input[type="text"],
+  .form-row input[type="email"]{
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+    max-width: 200px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    max-width: 200px;
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+  
+    color: #ffffff;
+    background-color: #5995da;
+  
+  
+    border: none;
+    border-radius: 3px;
+  
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+  
+  .form-row button:hover {
+    background-color: #76aeed;
+  }
+  
+  
+  .form-row button:active {
+    background-color: #407fc7;
+  }
+  
+   
+  
+
+
+  /* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .form-header {
+      padding: 50px;
+      margin-left: 0;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"],
+    .form-row input[type="email"]{
+      width: 250px;
+      height: initial;
+    }
+
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+    .form-row textarea {
+        width: 250px;
+      }
+      .form-row button {
+        margin-left: 120px;
+    }  
+  }
+
+
+/*---->SECTION 4*/
+
+/*-------------------->SECTIONS<--------------------*/
+/*-------------------->MAIN<--------------------*/
+
+/*-------------------->FOOTER<--------------------*/
+
+footer {
+    background-color: rgb(41, 41, 41);
+    color: #8b8b8b;
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#Contact{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+/*-------------------->FOOTER<--------------------*/
+
+/*-------------------->GLOBOS<--------------------*/
+
+.title-globo{
+    color:#000000;
+}
+
+
+/*-------------------->GLOBOS<--------------------*/
+
+/*-------------------->BUTTONS<--------------------*/
+
+#descripcionGlobo {
+    max-width: 250px;
+    height: auto;
+    position: fixed;
+    /* Cambiado a posición fija para que el globo flote en relación con la ventana del navegador */
+    top: 50%;
+    /* Posición vertical centrada */
+    left: 50%;
+    /* Posición horizontal centrada */
+    transform: translate(-50%, -50%);
+    /* Centrar el globo en la mitad de la ventana */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Color de fondo del globo */
+    margin: 50px;
+    padding: 10px;
+    /* Espacio interno del globo */
+    border-radius: 5px;
+    /* Radio de borde para hacer el globo redondeado */
+    box-shadow: 2px 2px 6px rgba(6, 6, 6, 0.3);
+    /* Sombra para efecto de elevación */
+    display: none;
+    /* Por defecto, el globo está oculto */
+    z-index: 1001;
+    /* Z-index alto para asegurar que esté por encima de otros elementos */
+    border-radius: 8%;
+}
+
+
+
+#descripcionGlobo2 {
+    max-width: 500px;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(6, 6, 6, 0.3);
+    display: none;
+    z-index: 1001;
+    border-radius: 8%;
+}
+
+#descripcionGlobo3 {
+    
+    max-width: auto;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    border-radius: 7%;
+    box-shadow: 2px 2px 6px rgba(6, 6, 6, 0.3);
+    display: none;
+    z-index: 1001;
+    border-radius: 8%;
+    color: #8b8b8b;
+}
+
+#descripcionGlobo4 {
+    
+    max-width: auto;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    border-radius: 7%;
+    box-shadow: 2px 2px 6px rgba(6, 6, 6, 0.3);
+    display: none;
+    z-index: 1001;
+    border-radius: 8%;
+    color: #8b8b8b;
+}
+
+
+
+.botonCerrar {
+    align-self: end;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+#button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+/*-------------------->BUTTONS<--------------------*/
+
+/*-------------------->IMAGENES<--------------------*/
+
+.imagen {
+    width: 300px;
+    height: auto;
+    padding: 0px;
+    border: 7px solid #b13921;
+    border-radius: 50%;
+    margin: 0px;
+}
+
+
+
+
+
+/*-------------------->IMAGENES<--------------------*/
+/*-------------------->RESPONSIVE<--------------------*/
+
+
+
