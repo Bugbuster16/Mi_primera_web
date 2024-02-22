@@ -329,6 +329,9 @@ nav{
         width:45%;
         flex-direction: column;
     }
+    .descripcionGlobo4{
+        width:45%;
+    }
 }
 
 
@@ -500,6 +503,11 @@ nav{
 
   /* ------------- Para Pantallas de más de 700px ------------- */
 @media only screen and (min-width: 700px) {
+    .formulario{
+        width: auto;
+        padding: 50px;
+    }
+
     .form-header {
       padding: 50px;
       margin-left: 0;
