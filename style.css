@@ -329,8 +329,8 @@ nav{
         width:45%;
         flex-direction: column;
     }
-    .descripcionGlobo4{
-        width:45%;
+    #descripcionGlobo4{
+        width:60%;
     }
 }
 
