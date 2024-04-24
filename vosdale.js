@@ -46,7 +46,7 @@ for (var i = 0; i < Cerrar.length; i++) {
       globo3.style.display = "none";
       globo4.style.display = "none";
       globo5.style.display = "none";
-      globo5.style.display = "none";
+      globo6.style.display = "none";
    })
 }
 
