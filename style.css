@@ -88,6 +88,7 @@ header.masthead .masthead-heading {
 }
 
 
+
 /*-------------------->HEADER<--------------------*/
 
 /*-------------------->NAV<--------------------*/
@@ -96,17 +97,22 @@ header.masthead .masthead-heading {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 20px;
+    padding: 20px 0 20px 0;
     background-color: rgba(34, 34, 34, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
 }
 
-nav{
+.section-0 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 50%;
+}
+.abrir{
+    padding-left: 40px;
 }
 
 .abrir_menu,
@@ -115,26 +121,34 @@ nav{
 }
 
 @media(max-width: 767px){
+    .masthead-subheading{
+        font-size: 20px;
+    }
     .section-0{
         background-color: rgba(236, 45, 45, 0.5);
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 0 40px 0 40px;
     }
    
     #lista-horizontal{
         background-color: rgba(236, 45, 45, 0.5);
-        width: 767px;
+        width: 480px;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+        position: absolute;
+        margin: 40px 50px 0 50px;
+        left: 0;
+
     }
 
     #lista-horizontal li{
         display: flex;
-        padding: 20px 0 20px 200px;
+        padding: 20px 20px 40px 20px;
+        
     }
 
 
@@ -149,33 +163,29 @@ nav{
 
     .abrir_menu{
         color: white;
+        justify-self: end;
     }
 
     .cerrar_menu{
         color: white;
         align-self: flex-end;
         padding-right: 26px;
+        margin-top: 20px;
     }
 
     .nav{
         opacity: 0;
         visibility: hidden;
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
         padding: 88px 0 0 0;
     }
 
     .nav_visible{
         opacity: 1;
         visibility: visible;
-
-
     }
 
     .nav li{
@@ -301,6 +311,7 @@ nav{
 
 .cards-wrapper{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 95%;
     align-items: center;
@@ -346,23 +357,33 @@ nav{
 
 /*---->SECTION 3*/
 #section-3 {
-
+    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    
+    max-width: 100%;
+  
+}
+#section-3 ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+#section-3 li{
+    width: 400px;
 }
 
 .title-3{
     font-size: 35px;
     padding: 110px 0 20px 0;
-    color: #fff;
-    
-    
+    color: #fff;    
 }
 
 .imagen2-globo{
-    width: 400px;
+    max-width: 400px;
     height: auto;
     padding: 0px;
     border-radius: 25%;
@@ -640,6 +661,24 @@ footer {
 }
 
 #descripcionGlobo4 {
+    
+    max-width: auto;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    border-radius: 7%;
+    box-shadow: 2px 2px 6px rgba(6, 6, 6, 0.3);
+    display: none;
+    z-index: 1001;
+    border-radius: 8%;
+    color: #8b8b8b;
+}
+
+#descripcionGlobo5 {
     
     max-width: auto;
     height: auto;

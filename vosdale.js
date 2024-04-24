@@ -3,6 +3,8 @@ var globo = document.getElementById('descripcionGlobo');
 var globo2 = document.getElementById('descripcionGlobo2');
 var globo3 = document.getElementById('descripcionGlobo3');
 var globo4 = document.getElementById('descripcionGlobo4');
+var globo5 = document.getElementById('descripcionGlobo5');
+var globo6 = document.getElementById('descripcionGlobo6');
 var Cerrar = document.querySelectorAll(".botonCerrar");
 
 function mostrarGlobo() {
@@ -26,6 +28,16 @@ function mostrarGlobo4() {
    globo4.style.display = 'flex';
    globo4.style.flexDirection = "column";
 }
+function mostrarGlobo5() {
+
+   globo5.style.display = 'flex';
+   globo5.style.flexDirection = "column";
+}
+function mostrarGlobo6() {
+
+   globo6.style.display = 'flex';
+   globo6.style.flexDirection = "column";
+}
 
 for (var i = 0; i < Cerrar.length; i++) {
    Cerrar[i].addEventListener("click", () => {
@@ -33,6 +45,8 @@ for (var i = 0; i < Cerrar.length; i++) {
       globo2.style.display = "none";
       globo3.style.display = "none";
       globo4.style.display = "none";
+      globo5.style.display = "none";
+      globo5.style.display = "none";
    })
 }
 
