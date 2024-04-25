@@ -134,7 +134,7 @@ header.masthead .masthead-heading {
    
     #lista-horizontal{
         background-color: rgba(236, 45, 45, 0.5);
-        width: 480px;
+        width: auto;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -337,12 +337,21 @@ header.masthead .masthead-heading {
 
 @media(max-width: 767px){
     .cards-wrapper{
-        width:45%;
+        width:80%;
         flex-direction: column;
+    }
+
+    .card{
+        max-width: auto;
+    }
+
+    .imagen2{
+        max-width: 45%;
     }
     #descripcionGlobo4{
         width:60%;
     }
+
 }
 
 
@@ -388,7 +397,24 @@ header.masthead .masthead-heading {
     padding: 0px;
     border-radius: 25%;
     margin: 0px;
+}
 
+@media(max-width: 767px){
+    
+    .work{
+        max-width: 100%;
+    }
+    .cards-wrapper2{
+        max-width: 80%;
+    }
+    .card2{
+        max-width: auto;
+    }
+
+    .imagen{
+        max-width: 45%;
+        align-items: center;
+    }
 }
 
 
@@ -443,6 +469,13 @@ header.masthead .masthead-heading {
     margin: 30px 0 40px 0;
 
   }
+  @media(max-width: 767px){
+    .formulario{
+        width: 45%;
+    }
+
+}
+
 
   /* ------------- Campos del Formulario ------------- */
 
